@@ -4,7 +4,7 @@ CentOS release 6.5 on vagrant
 Box for vagrant.
 --------------------
 
-- CentOS release 6.5 [DL](http://rytmrt.github.io/vagrant-hunds-on/box/CentOS-release-6_5.box)
+- CentOS release 6.5 [DL](http://rytmrt.github.io/vagrant-hunds-on/boxes/CentOS-release-6_5.box)
 
 
 How to Setup.
