@@ -1,0 +1,13 @@
+# Git ignore for vagrant.
+
+# MacOSX
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# ignore share directory.
+shere/
+
+# .vagrant
+.vagrant/
