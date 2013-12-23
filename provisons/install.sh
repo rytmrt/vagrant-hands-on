@@ -12,7 +12,8 @@ if ! sudo yum list installed | grep httpd > /dev/null 2>&1; then
     sudo /sbin/service iptables save > /dev/null 2>&1
 
     if [ ! -e "/vagrant/webroot/" ]; then
-        mkdie /vagrant/webroot
+        echo "Make directory webroot."
+        mkdir /vagrant/webroot
         echo "<?php phpinfo(); ?>" > /vagrant/webroot/index.php
     fi
 
@@ -82,12 +83,12 @@ if [ ! -e "/usr/share/phpMyAdmin/" ]; then
     sudo cp /usr/share/phpMyAdmin/config.sample.inc.php /usr/share/phpMyAdmin/config.inc.php
 
     # SELunux
-    chcon system_u:object_r:httpd_sys_content_t:s0 /usr/share/phpMyAdmin/ -R
+    #chcon system_u:object_r:httpd_sys_content_t:s0 /usr/share/phpMyAdmin/ -R
 
     echo "Completed phpMyAdmin installing."
 
     # restart the httpd.
-    sudo /sbin/service httpd restart > /dev/null 2>&1
+    sudo /sbin/service httpd restart > /dev/null
     echo "Restart httpd."
 fi
 
