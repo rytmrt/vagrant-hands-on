@@ -6,8 +6,5 @@
 # Windows
 Thumbs.db
 
-# ignore share directory.
-shere/
-
 # .vagrant
 .vagrant/
