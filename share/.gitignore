@@ -1,0 +1,5 @@
+# Ignore on file in shared directory.
+*
+
+# But .gitignore doesn't ifnore.
+!.gitignore
